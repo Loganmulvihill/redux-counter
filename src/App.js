@@ -11,7 +11,7 @@ function App() {
       <div className="card col-2 d-flex justify-content-center align-items-center text-center rounded card-border card-background">
         <div className="card-body d-flex">
           <div>
-            <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-rocket fa-2x" aria-hidden="true"></i>
           </div>
           <div>
             <h1 className="card-title white-text">Rad Redux</h1>
@@ -27,18 +27,9 @@ function App() {
             </div>
           </div>
           <div>
-            <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-rocket fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-        {/* <div>
-          <button type="button" className="btn btn-primary button-length m-1" onClick={() => dispatch(increment())} >
-            <i className="fa fa-plus" aria-hidden="true"></i>
-            </button>
-          <button type="button" className="btn btn-primary button-length m-1" onClick={() => dispatch(decrement())} >
-          <i className="fa fa-minus" aria-hidden="true"></i>
-          </button>
-        {isLogged ? <h3>Valuable Information I shouldn't see</h3> : ''}
-      </div> */}
       </div>
     </div >
   );

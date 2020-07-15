@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button-length {
+min-width:80px;
+border-radius:15px;
+font-size:1.25rem;
+background-color: #cd5d67;
+border: #cd5d67;
+}
+
+.card-border {
+  border: 5px solid #91171F;
+}
+
+.card-background {
+  background-color:#ba1f33;
+}
+
+.white-text {
+  color:white;
+}

@@ -4,46 +4,49 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
+import allReducer from './reducers/index'
+
+const store = createStore(allReducer);
 
 
 
 //Store -> Globalized State
 
-//Action Increment
-const increment = () => {
-  return {
-    type: 'INCREMENT'
-  }
-}
+// //Action Increment
+// const increment = () => {
+//   return {
+//     type: 'INCREMENT'
+//   }
+// }
 
-const decrement = () => {
-  return {
-    type: 'DECREMENT'
-  }
-}
+// const decrement = () => {
+//   return {
+//     type: 'DECREMENT'
+//   }
+// }
 
-//Reducer
+// //Reducer
 
-const counter = (state = 0, action) => {
-    switch(action.type){
-      case "INCREMENT":
-          return state + 1;
-      case "DECREMENT":
-        return state - 1;
-    }
-}
+// const counter = (state = 0, action) => {
+//     switch(action.type){
+//       case "INCREMENT":
+//           return state + 1;
+//       case "DECREMENT":
+//         return state - 1;
+//     }
+// }
 
-let store = createStore(counter);
+// let store = createStore(counter);
 
-//Display it in console
+// //Display it in console
 
-store.subscribe(() => console.log(store.getState()));
+// store.subscribe(() => console.log(store.getState()));
 
-//Dispatch
+// //Dispatch
 
-store.dispatch(increment());
-store.dispatch(decrement());
-store.dispatch(decrement());
+// store.dispatch(increment());
+// store.dispatch(decrement());
+// store.dispatch(decrement());
 
 ReactDOM.render(
   <React.StrictMode>
